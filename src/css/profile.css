@@ -107,11 +107,7 @@
     overflow-y: auto;
     height: 100%;
 }
-.profileBoxSubDiv button{
-    background-color: transparent;
-    border: none;
-    color: var(--litegrey);
-}
+
 .profileSearch:hover,
 .profileNotifications svg:hover,
 .profile:hover,

@@ -145,7 +145,7 @@ function Profile() {
                   <hr />
                   <p>Help</p>
                   <hr />
-                  <button onClick={handleLogout}>Signout</button>
+                  <p onClick={handleLogout}>Signout</p>
                 </div>
               </div>
             </motion.div>

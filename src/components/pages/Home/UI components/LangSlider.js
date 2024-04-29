@@ -147,7 +147,9 @@ function LangSlider(props) {
                   key={index}
                   className="embla__slide"
                 >
-                  <motion.img src={each} loading="lazy" decoding="async" fetchpriority="high" className="posterImg" />
+                  <motion.img src={each} 
+                  loading="lazy" 
+                  decoding="async" fetchpriority="high" alt="filter lang" className="posterImg" />
                 </motion.div>
               );
             })}

@@ -42,6 +42,41 @@ function CarouselBanner() {
     },
   };
 
+  const movieButtons = () => {
+    return (
+      <motion.div variants={childDelayVarient} className="carouselImageInfo ">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            className="bi bi-play-circle me-2"
+            viewBox="0 0 16 16"
+          >
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+          </svg>
+          Play
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            className="bi bi-info-circle me-2"
+            viewBox="0 0 16 16"
+          >
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+          </svg>
+          More info
+        </div>
+      </motion.div>
+    );
+  };
+
   console.log("CarouselBanner.js");
   return (
     <motion.div
@@ -89,40 +124,18 @@ function CarouselBanner() {
               <motion.div variants={childVarient} className="carouselImageRank">
                 <h3>#1 in India</h3>
               </motion.div>
-              <motion.img variants={childVarient} src={baahubail} className="carouselImageTitle" />
+              <motion.img
+                alt="title"
+                variants={childVarient}
+                src={baahubail}
+                className="carouselImageTitle"
+              />
               <br />
-              <motion.h6 variants={childVarient}>Telugu | Hindi | Tamil | Kanada | Malayalam</motion.h6>
+              <motion.h6 variants={childVarient}>
+                Telugu | Hindi | Tamil | Kanada | Malayalam
+              </motion.h6>
               <br />
-              <motion.div variants={childDelayVarient} className="carouselImageInfo ">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    className="bi bi-play-circle me-2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
-                  </svg>
-                  Play
-                </div>
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    className="bi bi-info-circle me-2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
-                  </svg>
-                  More info
-                </div>
-              </motion.div>
+              {movieButtons()}
             </motion.div>
             <div className="carouselImage1"></div>
           </div>
@@ -139,39 +152,17 @@ function CarouselBanner() {
               <motion.div variants={childVarient} className="carouselImageRank">
                 <h3>#2 in India</h3>
               </motion.div>
-              <motion.img src={KGF} variants={childVarient} className="carouselImageTitle mb-4" />
-              <motion.h6 variants={childVarient}>Telugu | Hindi | Tamil | Kanada | Malayalam</motion.h6>
+              <motion.img
+                alt="title"
+                src={KGF}
+                variants={childVarient}
+                className="carouselImageTitle mb-4"
+              />
+              <motion.h6 variants={childVarient}>
+                Telugu | Hindi | Tamil | Kanada | Malayalam
+              </motion.h6>
               <br />
-              <motion.div variants={childDelayVarient} className="carouselImageInfo ">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    className="bi bi-play-circle me-2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
-                  </svg>
-                  Play
-                </div>
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    className="bi bi-info-circle me-2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
-                  </svg>
-                  More info
-                </div>
-              </motion.div>
+              {movieButtons()}
             </motion.div>
             <div className="carouselImage1 carouselImage2"></div>
           </div>
@@ -188,40 +179,18 @@ function CarouselBanner() {
               <motion.div variants={childVarient} className="carouselImageRank">
                 <h3>#3 in India</h3>
               </motion.div>
-              <motion.img variants={childVarient} src={RRR} className="carouselImageTitle" />
+              <motion.img
+                alt="title"
+                variants={childVarient}
+                src={RRR}
+                className="carouselImageTitle"
+              />
               <br />
-              <motion.h6 variants={childVarient}>Telugu | Hindi | Tamil | Kanada | Malayalam</motion.h6>
+              <motion.h6 variants={childVarient}>
+                Telugu | Hindi | Tamil | Kanada | Malayalam
+              </motion.h6>
               <br />
-              <motion.div variants={childDelayVarient} className="carouselImageInfo ">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    className="bi bi-play-circle me-2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
-                  </svg>
-                  Play
-                </div>
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    className="bi bi-info-circle me-2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
-                  </svg>
-                  More info
-                </div>
-              </motion.div>
+              {movieButtons()}
             </motion.div>
             <div className="carouselImage1 carouselImage3"></div>
           </div>

@@ -161,7 +161,9 @@ function MovieSlider(props) {
                 key={index}
                 className="embla__slide"
               >
-                <motion.img src={each} loading="lazy" decoding="async" fetchpriority="high" className="posterImg" />
+                <motion.img alt="poster" src={each} 
+                loading="lazy" 
+                decoding="async" fetchpriority="high" className="posterImg" />
                 <motion.div variants={posterDesc} className="description">
                   <div className="description_buttons">
                     <motion.button initial={{opacity:0.3, scale:0.9}} whileHover={{opacity: 1, scale:1}} className="myListButton">

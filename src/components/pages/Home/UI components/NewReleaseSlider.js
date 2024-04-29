@@ -186,6 +186,7 @@ function NewReleaseSlider(props) {
               >
                 <Link to={`moviepage/${each.name}`}>
                   <img
+                    alt="MoviePoster"
                     loading="lazy"
                     decoding="async"
                     fetchpriority="high"

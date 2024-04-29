@@ -1,7 +1,7 @@
 import React from "react";
 
 function Footer() {
-  console.log("Footer.js")
+  console.log("Footer.js");
   return (
     <div className="footerContainer">
       <div className="footer">
@@ -11,9 +11,9 @@ function Footer() {
           <p className="footerButtons">Careers</p>
           <p className="mt-3 mb-0">© 2023 STAR. All Rights Reserved.</p>
           <div className="footerButtons footerButtonPrivacy">
-            <a>Terms Of Use</a>
-            <a>Privacy Policy</a>
-            <a>FAQ</a>
+            <a href="">Terms Of Use</a>
+            <a href="">Privacy Policy</a>
+            <a href="">FAQ</a>
           </div>
         </div>
         <div className="footerOptions">
@@ -67,10 +67,12 @@ function Footer() {
           </div>
           <div className="footerAppStoreContainer">
             <img
+              alt="Download on the Play Store"
               className="applicationStoreImage"
               src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_3840/v1661346101/google-playstore"
             />
             <img
+              alt="Get it on App Store"
               className="applicationStoreImage"
               src="https://img10.hotstar.com/image/upload/f_auto,q_90,w_3840/v1661346071/ios-appstore"
             />

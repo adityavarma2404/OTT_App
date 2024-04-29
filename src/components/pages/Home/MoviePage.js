@@ -21,6 +21,7 @@ function MoviePage() {
     <motion.div>
       <div className="movieBackgroundContainer">
         <img
+          alt="Poster"
           loading="lazy"
           decoding="async"
           fetchpriority="high"
@@ -29,6 +30,7 @@ function MoviePage() {
         />
         <div className="moviePageDetails">
           <img
+            alt="title"
             loading="lazy"
             decoding="async"
             fetchpriority="high"
@@ -62,9 +64,7 @@ function MoviePage() {
               Play
             </button>
             {fetcedData.favourite ? (
-              <button
-                className="myListButton"
-              >
+              <button className="myListButton">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
@@ -78,9 +78,7 @@ function MoviePage() {
                 Listed
               </button>
             ) : (
-              <button
-                className="myListButton"
-              >
+              <button className="myListButton">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"

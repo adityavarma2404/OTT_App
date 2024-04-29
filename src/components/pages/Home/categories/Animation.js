@@ -46,7 +46,7 @@ function Animation({ data }) {
     <motion.div className="newReleaseContainer">
       <div className="newReleaseHeading d-flex justify-content-between align-items-center">
         <h3 className="">Animation</h3>
-        <a>
+        <a href="">
           See more{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"

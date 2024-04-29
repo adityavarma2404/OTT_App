@@ -54,6 +54,7 @@ function TVshow() {
                 </div>
                 <div className="tvShowImageTitleContainer">
                   <img
+                    alt="TV Show Title Image"
                     className="tvShowImageTitle"
                     src="https://img10.hotstar.com/image/upload/f_auto,h_156/sources/r1/cms/prod/7032/1607032-t-73a2c8df16e9"
                   />
@@ -105,6 +106,7 @@ function TVshow() {
                 </div>
                 <div className="tvShowImageTitleContainer mb-3">
                   <img
+                    alt="TV Show Title"
                     className="tvShowImageTitle"
                     src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABaj_P10RHKdBmsfvYClXh1RVOuOQPVxQq4EFXj3gePdrJp9TiuDFEbF_BhSJKW5bIRiwMcKmeYpGSGxpcwhZzgtpTgxQIHsPDdEDYNYtwlc.webp?r=8d5"
                   />
@@ -156,6 +158,7 @@ function TVshow() {
                 </div>
                 <div className="tvShowImageTitleContainer">
                   <img
+                    alt="TV Show title"
                     className="tvShowImageTitle"
                     src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABajpdrycy5d7g0_rVXXQFshLftrpWv3UfxKy_xbxeeHO0Uw8LTaUz6nB6NfgssvXKis39S2NPz17DPiVKdKAcj98uoYf1-NALFxSy7iaPMM.webp?r=584"
                   />
@@ -207,6 +210,7 @@ function TVshow() {
                 </div>
                 <div className="tvShowImageTitleContainer tvShowImageTitleContainer4">
                   <img
+                    alt="TV Show Title Image"
                     className="tvShowImageTitle"
                     src="https://img10.hotstar.com/image/upload/f_auto,h_156/sources/r1/cms/prod/7520/1417520-t-4197a648dfff"
                   />
@@ -295,6 +299,7 @@ function TVshow() {
               return (
                 <div key={index} className="newReleaseHover me-3 mb-5">
                   <img
+                    alt="TV show"
                     loading="lazy"
                     decoding="async"
                     fetchpriority="high"

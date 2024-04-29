@@ -4,7 +4,6 @@ import MovieSlider from "../UI components/MovieSlider";
 
 
 function Romantic({data}) {
-  console.log("Romantic.js")
   return (
     <div className="newReleaseContainer">
       <div className="newReleaseHeading d-flex justify-content-between align-items-center">

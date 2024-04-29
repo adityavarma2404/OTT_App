@@ -16,7 +16,6 @@ function MoviePage() {
     "Editor",
   ];
   const fetcedData = useLoaderData();
-  console.log("MoviePage.js");
   return (
     <motion.div>
       <div className="movieBackgroundContainer">
@@ -130,7 +129,6 @@ function MoviePage() {
 export default React.memo(MoviePage);
 
 export async function fetchNewReleaseMoviedata({ request, params }) {
-  console.log("#fetch fom MoviePage");
   const name = params.movieName;
   try {
     const response = await axios.get(

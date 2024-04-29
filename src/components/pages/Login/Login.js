@@ -53,12 +53,6 @@ function Login() {
 
   async function handleSignUp(e) {
     e.preventDefault();
-    console.log(
-      "creds ->",
-      signUpRef.current.value,
-      passRef.current.value,
-      confirmPassRef.current.value
-    );
     const confirmP = confirmPassRef.current.value;
     const pass = passRef.current.value;
     const userId = signUpRef.current.value;

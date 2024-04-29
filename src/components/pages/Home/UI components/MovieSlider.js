@@ -41,12 +41,10 @@ function MovieSlider(props) {
 
   const slides = props.movies;
   const scrollPrev = useCallback(() => {
-    console.log("scroll prev");
     emblaApi && emblaApi.scrollPrev();
   }, [emblaApi]);
 
   const scrollNext = useCallback(() => {
-    console.log("scroll  next");
     emblaApi && emblaApi.scrollNext();
   }, [emblaApi]);
 
@@ -88,19 +86,15 @@ function MovieSlider(props) {
     if (newWidth > 1099 && newWidth < 1299 && widthState !== "L") {
       widthState = "L";
       setTiles(5);
-      console.log("state updated to 5");
     } else if (newWidth <= 1099 && newWidth > 799 && widthState !== "M") {
       widthState = "M";
       setTiles(4);
-      console.log("state updated to 4");
     } else if (newWidth <= 799 && newWidth > 499 && widthState !== "S") {
       widthState = "S";
       setTiles(3);
-      console.log("state updated to 3");
     } else if (newWidth <= 499 && newWidth > 390 && widthState !== "XS") {
       widthState = "XS";
       setTiles(2);
-      console.log("state updated to 2");
     }
   };
 
@@ -134,8 +128,6 @@ function MovieSlider(props) {
   useEffect(() => {
     if (emblaApi) emblaApi.on("slidesInView", logSlidesInView);
   }, [emblaApi, logSlidesInView]);
-
-  console.log("MovieSlider.js")
 
   return (
     <motion.div className="embla">

@@ -39,7 +39,6 @@ function Profile() {
       console.log("Failed to Log out");
     }
   };
-  console.log("Profile.js");
   return (
     <>
       <NavBar />

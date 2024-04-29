@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import NewReleaseSlider from "../UI components/NewReleaseSlider";
 
 function NewRelease({data}) {
-  console.log("NewRelease.js");
   return (
     <div className="newReleaseContainer">
       <div id="newRelease" className="newReleaseHeading d-flex justify-content-between align-items-center">

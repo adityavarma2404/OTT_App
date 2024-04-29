@@ -12,8 +12,6 @@ function BrowsebyLanguage() {
     "https://img10.hotstar.com/image/upload/f_auto,q_90,w_3840/sources/r1/cms/prod/6668/1526668-a-ed367d61302a",
     "https://img10.hotstar.com/image/upload/f_auto,q_90,w_3840/sources/r1/cms/prod/6670/1526670-a-ec8fb58a5fb8"
   ];
-
-  console.log("BrowseByLan.js")
   return (
     <div className="newReleaseContainer">
       <div className="newReleaseHeading d-flex justify-content-between align-items-center">

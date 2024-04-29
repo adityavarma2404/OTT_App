@@ -25,7 +25,6 @@ function Animation({ data }) {
 
   const handleScroll = () => {
     const scrollcontainerref = scrollContainerRef.current;
-    console.log("scroll left ->", scrollcontainerref.scrollLeft);
     if (scrollcontainerref.scrollLeft !== 0) {
       leftScrollButtonRef.current.classList.remove("hidden");
     } else {
@@ -41,7 +40,6 @@ function Animation({ data }) {
       rightScrollButtonRef.current.classList.remove("hidden");
     }
   };
-  console.log("Animation.js");
   return (
     <motion.div className="newReleaseContainer">
       <div className="newReleaseHeading d-flex justify-content-between align-items-center">

@@ -31,7 +31,6 @@ function NavBar() {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   };
-  console.log("NavBar.js");
   return (
     <>
       <div className="sideBarContainer">

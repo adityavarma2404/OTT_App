@@ -1,7 +1,6 @@
 import React from "react";
 
 function Footer() {
-  console.log("Footer.js");
   return (
     <div className="footerContainer">
       <div className="footer">

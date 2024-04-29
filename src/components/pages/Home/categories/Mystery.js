@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import MovieSlider from "../UI components/MovieSlider";
 
 function Mystery({data}) {
-
-  console.log("Mystery.js")
   return (
     <div className="newReleaseContainer">
       <div className="newReleaseHeading d-flex justify-content-between align-items-center">

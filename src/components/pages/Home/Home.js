@@ -75,7 +75,6 @@ function Home() {
     driverObj.drive();
     localStorage.setItem("tourCompleted", "true");
   }
-  console.log("Home.js");
   return (
     <>
       <CarouselBanner />
@@ -133,7 +132,6 @@ export const fetchMoviedata = async () => {
       "https://ott-movies-data-default-rtdb.firebaseio.com/movies-list.json"
     );
     const data = response.data;
-    console.log("#fetch from home.js");
     return data;
   } catch (error) {
     console.error(error);

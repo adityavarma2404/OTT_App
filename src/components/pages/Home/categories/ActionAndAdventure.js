@@ -4,7 +4,6 @@ import MovieSlider from "../UI components/MovieSlider";
 
 
 function ActionAndAdventure({data}) {
-  console.log("ActionAnd.js");
   return (
     <div className="newReleaseContainer">
       <div className="newReleaseHeading d-flex justify-content-between align-items-center">

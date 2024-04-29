@@ -171,7 +171,6 @@ function ListOfMovies() {
     });
     allMoviesCategory = filterMovies;
   }
-  console.log("ListOfMovies.js");
   return (
     <>
       <div className="moviesListContainer">
@@ -237,7 +236,6 @@ function ListOfMovies() {
 export default React.memo(ListOfMovies);
 
 export async function fetchAllMoviesFromCategory({ request, params }) {
-  console.log("#fetch from ListOfMovies.js");
   let name = params.category;
   let url = "";
   if (name === "newRelease") {

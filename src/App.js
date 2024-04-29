@@ -113,7 +113,6 @@ const loginRouter = createBrowserRouter([
   },
 ]);
 function App() {
-  console.log("App.js");
   return (
     <AuthProvider>
       <RouterProvider router={loginRouter} />

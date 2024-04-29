@@ -76,8 +76,6 @@ function CarouselBanner() {
       </motion.div>
     );
   };
-
-  console.log("CarouselBanner.js");
   return (
     <motion.div
       id="carouselExampleIndicators"

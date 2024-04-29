@@ -4,7 +4,6 @@ import Footer from "./Footer";
 
 function TVshow() {
   const tvShows = movies.tvshows;
-  console.log("TVshow.js");
   return (
     <>
       <div

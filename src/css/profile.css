@@ -1,0 +1,152 @@
+:root {
+    --dark: #19171a;
+    --grey: #45433e;
+    --litegrey: #959794;
+    --red: #e9322e;
+}
+
+.profileBarContainer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 20px;
+    width: 100vw;
+    z-index: 8;
+}
+
+.profileLogo {
+    background: center / contain no-repeat url('../../public/images/Li_two.png');
+    width: 100px;
+    height: 70px;
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+    color: var(--litegrey);
+    padding-left: 20px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: rgb(25,23,26, 0.9);
+}
+
+.profileSearch {
+    border-style: none;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: var(--litegrey);
+}
+.profileSearch svg, .profileNotifications svg, .profile svg{
+    width: 30px;
+}
+
+.profileNotifications {
+    margin-right: 30px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: var(--litegrey);
+}
+
+.profileNotificationBox {
+    position: absolute;
+    height: 300px;
+    right: 2px;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.profileNotificationBox .profileNotificationBoxSubDiv{
+    border-top: 2px solid white;
+    border-left: 3px solid white;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    padding-right: 5px;
+    height: 100%;
+    background-color: rgb(25,23,26, 0.9);
+}
+
+
+.profileNotificationBox .profileNotificationBoxSubDiv div {
+    overflow-y: auto;
+    height: 100%;
+    color: white;
+    z-index: 8;
+}
+
+.profile {
+    margin-right: 30px;
+    color: var(--litegrey);
+    background-color: transparent;
+    border: none;
+}
+
+.profileBox {
+    position: absolute;
+    right: 30px;
+    width: 200px;
+    z-index: 1;
+}
+
+.profileBox .profileBoxSubDiv{
+    border-top: 2px solid white;
+    border-left: 3px solid white;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    padding-right: 5px;
+    height: 100%;
+    background-color: rgb(25,23,26, 0.9);
+
+}
+
+.profileBox .profileBoxSubDiv div {
+    overflow-y: auto;
+    height: 100%;
+}
+.profileBoxSubDiv button{
+    background-color: transparent;
+    border: none;
+    color: var(--litegrey);
+}
+.profileSearch:hover,
+.profileNotifications svg:hover,
+.profile:hover,
+.profileBoxSubDiv button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+ /* profile box  */
+.profile:hover .profileBox {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+/* scroll bar  */
+.profileNotificationBoxSubDiv div::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+    margin-right: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--litegrey);
+    border-radius: 10px;
+    margin-right: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 10px;
+    margin-right: 10px;
+}

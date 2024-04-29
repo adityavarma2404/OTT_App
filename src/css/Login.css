@@ -1,0 +1,605 @@
+:root {
+    --dark: #191719;
+    --grey: #45433e;
+    --litegrey: #959794;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../asserts/fonts/Anton-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ProtestRiot';
+    src: url('../asserts/fonts/ProtestRiot-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BerkshireSwash';
+    src: url('../asserts/fonts/BerkshireSwash-Regular.ttf') format('truetype');
+}
+
+.mainHeadings{
+    font-family: 'BerkshireSwash';
+}
+
+.headingAnton{
+    font-family: 'Anton';
+}
+
+.dark {
+    color: var(--dark);
+}
+
+.grey {
+    color: var(--grey);
+}
+
+.litegrey {
+    color: var(--litegrey);
+}
+
+.bodyBackground {
+    background-image: url('../../public/images/loki1.jpg');
+    background-color: black;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 70px;
+    background: center / contain no-repeat url('../../public/images/Li_two.png');
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.bodyBackground::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #191719;
+    opacity: 0.5;
+}
+
+
+
+.bodyBackground * {
+    z-index: 1;
+}
+
+.forgotPasswordPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registrationError {
+    color: rgb(255, 104, 104);
+    margin-bottom: 20px;
+}
+.loginError {
+    color: rgb(34, 34, 34);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.container {
+    height: 70%;
+    width: 50%;
+    padding: 0px;
+    margin-right: 12%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containerOne {
+    width: 50%;
+    height: 100%;
+    padding: 0px 10px;
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgotPasswordContainerOne {
+    width: 70%;
+}
+
+.containerOne::before {
+    content: '';
+    position: absolute;
+    background-color: #45433e;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+.hiddenRegister {
+    display: none;
+    width: 100%;
+}
+
+.RegisterContainer {
+    position: relative;
+    width: 70%;
+
+}
+
+.RegisterContainer input {
+    border-radius: 10px;
+    background: transparent;
+    height: 40px;
+    width: 100%;
+    outline: none;
+}
+
+.inputLiteBorder {
+    border: 2px solid var(--litegrey);
+    padding: 0 10px;
+    color: white;
+}
+
+.inputDarkBorder {
+    border: 2px solid var(--dark);
+
+}
+
+.loginInput {
+    padding: 0 10px;
+    color: white;
+}
+
+.RegisterContainer label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 20px;
+    transform: translateY(-50%);
+    transition: .5s;
+    padding: 0px 5px;
+    pointer-events: none;
+}
+
+
+.RegisterContainer input:focus~label,
+.RegisterContainer input:valid~label {
+    top: 0;
+    font-size: 15px;
+    background-color: #45433e;
+    border-radius: 5px;
+}
+
+
+.containerTwo {
+    width: 50%;
+    height: 100%;
+    background-color: #959794;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loginContainer {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headingTwo {
+    font-size: 50px;
+    font-weight: 600;
+    color: #191719;
+}
+
+.iconBackground {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #191719;
+    color: #191719;
+    cursor: pointer;
+}
+
+.fbLogo {
+    margin-top: 1px;
+}
+
+.heading {
+    font-weight: 600;
+    animation: typing 1.5s steps(8), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+.welcomeHeading {
+    color: #191719;
+    font-size: 60px;
+    width: 270px;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+.para {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: -12px;
+}
+
+.signUpContainer {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    animation: fadeUp .5s ease-in;
+}
+
+.signUpButton {
+    padding: 5px 5px;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.2s;
+    background-color: transparent;
+}
+
+.signUpButton:hover {
+    width: 85px;
+    height: 45px;
+}
+
+.inputContainer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.leftAnimation {
+    animation: fadeLeft 1s ease-in-out;
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.rightAnimation {
+    animation: fadeRight 1s ease-in-out;
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.inputContainer input {
+    border: 2px solid #45433e;
+    border-radius: 10px;
+    background: transparent;
+    height: 40px;
+    width: 80%;
+    outline: none;
+}
+
+.inputContainer label {
+    position: absolute;
+    top: 0;
+    top: 50%;
+    left: 15%;
+    font-size: 20px;
+    transform: translateY(-50%);
+    color: #191719;
+    transition: .5s;
+    padding: 0px 5px;
+    pointer-events: none;
+}
+
+.inputContainer input:focus~label,
+.inputContainer input:valid~label {
+    top: 0;
+    font-size: 15px;
+    background-color: #959794;
+}
+
+.anchorContainer {
+    width: 100%;
+
+}
+
+.anchor {
+    text-decoration: none;
+    color: #45433e;
+    font-weight: 500;
+}
+
+.anchor:hover {
+    color: black;
+}
+
+.btnLoginContainer {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    animation: fadeUp .5s ease-in;
+
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+
+.loginButton {
+    width: 90px;
+    height: 40px;
+    border-style: none;
+    border-radius: 20px;
+    color: #959794;
+    font-weight: 500;
+    transition: all 0.2s;
+    background-color: #45433e;
+}
+
+.loginButton:hover {
+    width: 95px;
+    height: 45px;
+}
+
+.registeredContainer {
+    display: none;
+    width: 100%;
+}
+
+.RegisteredHeading {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/* css for single container  */
+.mobileContainer {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: relative;
+
+
+}
+
+.mobileContainer::before {
+    background-color: var(--litegrey);
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.mobileSubContainer {
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobileWelcomeHeading {
+    color: black;
+    font-size: 8vw;
+    width: 100%;
+}
+
+.mobileLoginForm {
+    width: 85%;
+}
+
+.mobileButtonsContainer {
+    border-top: 2px solid var(--dark);
+    padding: 15px 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.mobileButton {
+
+    padding: 5px 5px;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.2s;
+    background-color: transparent;
+    border: 2px solid var(--dark);
+}
+
+.mobileHeading {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.mobileRegisterFormContainer {
+    width: 100%;
+}
+
+.mobileRegisterForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.width100 {
+    width: 100%;
+}
+
+.forgotPasswordContainer {
+    width: 80%;
+}
+
+.forgotPasswordReturn {
+    color: white;
+}
+
+
+.getLinkButtonContainer {
+    text-align: center;
+}
+
+.getLinkButton {
+    background-color: var(--litegrey);
+    border-style: none;
+    border-radius: 15px;
+    font-weight: 600;
+    width: 30%;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+
+@media screen and (min-width: 1180px) and (max-width: 1640px) {
+    .container {
+        margin-right: 8%;
+    }
+
+    .containerOne::before {
+        opacity: 0.5;
+    }
+
+    .headingTwo {
+        color: black;
+    }
+
+    .heading {
+        color: black;
+    }
+
+
+}
+
+@media screen and (min-width: 850px) and (max-width: 1180px) {
+    .bodyBackground {
+        background-image: url('../../public/images/thor1.jpg');
+        background-position: -350px;
+        background-size: cover;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    .containerOne::before {
+        opacity: 0.7;
+    }
+
+    .headingTwo {
+        color: black;
+    }
+
+    .heading {
+        color: black;
+    }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 850px) {
+    .bodyBackground {
+        background-image: url('../../public/images/bpanther.jpg');
+        background-position: -250px;
+        background-size: cover;
+    }
+
+
+    .container .containerOne,
+    .container .containerTwo {
+        display: none;
+    }
+
+    .mobileContainer {
+        display: flex;
+    }
+
+    .getLinkButton {
+        width: 100%;
+    }
+
+    .RegisterContainer {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 620px) {
+
+    .container {
+        width: 70%;
+
+    }
+
+    .logo {
+        width: 100px;
+        height: 70px;
+        top: 20px;
+        left: 40%;
+    }
+
+}

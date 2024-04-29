@@ -1,38 +1,57 @@
-.App {
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--dark);
+}
+:root {
+  --dark: #19171a;
+  --grey: #45433e;
+  --litegrey: #959794;
+  --red: #e9322e;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.driver-popover.driverjs-theme {
+  background-color: var(--grey);
+  background-color: var(--litegrey);
+  color: #000;
+  flex: 3;
+}
+
+.driver-popover.driverjs-theme .driver-popover-title {
+  font-size: 24px;
+}
+.driver-popover.driverjs-theme .driver-popover-description,
+.driver-popover.driverjs-theme .driver-popover-progress-text {
+  font-size: 16px;
+  font-weight: 520;
+  color: #000;
+}
+
+.driver-popover.driverjs-theme .driver-popover-progress-text {
+  font-size: 14px;
+}
+.driver-popover.driverjs-theme button {
   text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.driver-popover.driverjs-theme button:hover {
+  scale: 1.1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.driver-popover.driverjs-theme .driver-popover-navigation-btns {
+  gap: 4px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.driver-popover.driverjs-theme .driver-popover-close-btn {
+  font-size: 25px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.driver-popover.driverjs-theme .driver-popover-close-btn:hover {
+  scale: 1.2;
 }

@@ -1,0 +1,249 @@
+@media screen and (max-width:1299px) {
+    .carouselImageTitle {
+        width: 70%;
+    }
+    .moviePageDetails {
+        width: 40%;
+        height: 100%;
+    }
+    .tvShowImageTitle {
+        width: 200px;
+    }
+
+    .tvShowImageDesc {
+        padding-left: 0% ;
+    }
+
+    .newReleasePoster {
+        width: 240px;
+        height: 140px;
+    }
+
+    .dialogue {
+        font-size: 25px;
+        width: 80%;
+    }
+
+    .embla_animation {
+        height: 25em;
+    }
+
+    .animation_embla_slide {
+        flex: 0 0 25%;
+    }
+}
+
+@media screen and (max-width:1099px) {
+    .carouselImageTitle {
+        width: 90%;
+    }
+    
+    .filterButton {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .tvShowBannerButtonscontainer {
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+
+    .tvShowBannerButtonscontainer div {
+        margin-bottom: 10px;
+    }
+
+    .tvShowPlay {
+        width: 40px;
+        height: 40px;
+    }
+
+    .moviePageDetails {
+        width: 45%;
+        height: 100%;
+    }
+
+    .moviesListSubHeading {
+        font-size: 18px;
+    }
+
+    .newReleasePoster {
+        width: 200px;
+        height: 110px;
+    }
+
+    .customCarousel {
+        height: 60vh;
+    }
+
+    .carouselImageDescription {
+        width: 30% ;
+        padding-left: 0 ;
+    }
+
+    .carouselImageInfo {
+        width: 100%;
+    }
+
+    .dialogue {
+        font-size: 20px;
+        width: 82%;
+    }
+
+    .footerConnectContainer {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:799px) {
+
+    .searchInput{
+        width: 70%;
+    }
+
+    .moviePageDetailsDescription{
+        display: none;
+    }
+    .customCarousel {
+        height: 50vh;
+    }
+    .filterButton {
+        font-size: 16px;
+    }
+    .sideBarContainer {
+        right: 50px;
+    }
+    .dropdown {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    .profileSearch svg,
+    .profileNotifications svg,
+    .profile svg {
+        width: 25px;
+    }
+
+    .tvShowImageDesc {
+        left: 10px;
+        width: 80%;
+        align-items: flex-start;
+    }
+
+    .tvShowImageDesc h6{
+        display: none ;
+    }
+
+    .tvShowImageContainer {
+        width: 100%;
+    }
+
+    .moviePageDetails {
+        width: 55%;
+    }
+
+    .moviesListSubHeading {
+        font-size: 16px;
+    }
+
+    .carouselImageDescription .carouselImageInfo {
+        display: none;
+    }
+
+    .carouselImageContainer {
+        position: relative;
+    }
+
+    .carouselImageDescription {
+        position: absolute;
+        bottom: 10%;
+        z-index: 5;
+        width: 40%;
+        padding-left: 0;
+        left: 10px;
+        align-items: flex-start;
+    }
+
+    .carouselImage1 {
+        width: 100%;
+    }
+
+    .carouselImageTitle {
+        width: 80%;
+    }
+
+    .image-container {
+        width: 250px;
+        height: 300px;
+    }
+
+    .dialogue {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .footer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footerOptions {
+        width: 55%;
+        margin-bottom: 20px;
+    }
+
+    .footerConnectContainer {
+        width: 70%;
+        flex-wrap: wrap;
+    }
+
+    .applicationStoreImage {
+        width: 130px;
+        height: 40px;
+    }
+}
+
+
+@media screen and (max-width:499px) {
+
+    .carouselImageDescription {
+        width: 55%;
+    }
+
+    .tvShowImageTitle {
+        width: 180px;
+    }
+    .moviesListPoster {
+        width: 240px;
+        height: 135px;
+    }
+
+    .tvShowImageDesc {
+        bottom: 10%;
+        right: 30%;
+        z-index: 5;
+        width: 70%;
+    }
+    .tvShowImageDesc .tvShowBannerButtonscontainer{
+        display: none ;
+    }
+    .tvShowImageDesc {
+        left: 20px;
+    }
+
+    .customCarousel {
+        height: 50vh;
+    }
+
+    .carouselImageTitle {
+        width: 100%;
+    }
+
+    .footerOptions {
+        width: 75%;
+        margin-bottom: 20px;
+    }
+}

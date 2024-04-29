@@ -1,0 +1,22 @@
+
+{
+    "banner1":{
+        "rank": "#1 in India",
+        "titleURL":"https://occ-0-3604-116.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABeQQjbrcbQoDBta_eRf3V92dn8v_mFaJ-aSana3_Q0FEyDGDWvtHMmQfpgkiVfh7QxEnBEvudb5HYFErYtI5wOvewO1GuwalFGuUmB74Iv4a.png?r=c40",
+        "languages": "Telugu | Hindi | Tamil | Kanada | Malayalam",
+        "posterURL": "https://i.pinimg.com/originals/6e/dd/41/6edd41465fd06b7cebd419d0e88d2ae3.jpg"
+    },
+    "banner2":{
+        "rank": "#2 in India",
+        "titleURL":"https://rajaneditz.com/wp-content/uploads/2022/02/RRR-png_compress8.png",
+        "languages": "Telugu | Hindi | Tamil | Kanada | Malayalam",
+        "posterURL": "https://www.hdwallpapers.in/download/n__t__rama_rao_jr__ram_charan_alia_bhatt_ajay_devgn_olivia_morris_hd_rrr-HD.jpg"
+        
+    },
+    "banner3":{
+        "rank": "#3 in India",
+        "titleURL":"https://www.mmppicture.co.in/wp-content/uploads/2021/02/KGF-Text-PNG.png",
+        "languages": "Telugu | Hindi | Tamil | Kanada | Malayalam",
+        "posterURL": ""
+    }
+}

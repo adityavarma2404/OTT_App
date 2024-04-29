@@ -1,0 +1,1163 @@
+:root {
+    --dark: #19171a;
+    --grey: #45433e;
+    --litegrey: #959794;
+    --red: #e9322e;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../asserts/fonts/Anton-Regular.ttf') format('truetype');
+}
+
+.customCarousel {
+    margin-top: 65px;
+    margin-bottom: 20px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner {
+    color: white;
+    margin-top: 25px;
+}
+
+.carousel-item {
+    height: 100%;
+    text-align: center;
+}
+
+.carouselImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carouselImageDescription {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselImageRank {
+    width: 65%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.carouselImageTitle {
+    width: 50%;
+}
+
+.carouselImageInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.carouselImage1 {
+    background: center / cover no-repeat url("C:\Users\adity\Downloads\2272647.jpg");
+    border-radius: 10px;
+    width: 65%;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.carouselImage1::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-image: linear-gradient(to right, var(--dark) 10%, transparent 90%);
+    z-index: 5;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+.customCarousel:hover .carousel-control-prev,
+.carousel-control-prev:hover,
+.customCarousel:hover .carousel-control-next {
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 7%;
+    margin-left: 3%;
+}
+
+
+/* banner 2  */
+.carouselImage2 {
+    background: center / cover no-repeat url("C:\Users\adity\Downloads\kgf.jpg");
+
+}
+
+
+/* banner 3  */
+.carouselImage3 {
+    background: center / cover no-repeat url("C:\Users\adity\Downloads\rrr.jpg");
+}
+
+
+
+
+
+/* New release  */
+.newReleaseContainer {
+    color: var(--litegrey);
+    position: relative;
+}
+
+.newReleaseHeading {
+    padding: 0 5%;
+    text-decoration: none;
+    color: var(--litegrey);
+}
+
+.seeMoreText {
+    text-decoration: none;
+    color: var(--litegrey);
+
+}
+
+.newRelease {
+    padding: 5px 20px;
+    transition: 1s;
+    height: 250px;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    scroll-behavior: smooth;
+}
+
+
+.newReleaseSub {
+    display: flex;
+    transition: 1s;
+    padding-top: 10px;
+}
+
+.newReleaseHover {
+    position: relative;
+    color: white;
+    margin-right: 15px;
+}
+.newReleaseHover::before{
+    content:"Loading..." ;
+    font-weight: 500;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    color: var(--litegrey);
+}
+
+.newReleasePoster {
+    width: 290px;
+    height: 160px;
+    border-radius: 20px;
+    transition-delay: 0.5s;
+    position: relative;
+}
+
+@media screen and (max-width: 1400px) {
+    .newReleasePoster {
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .newReleasePoster {
+        width: 340px;
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .newReleasePoster {
+        width: 360px;
+        height: 200px;
+    }
+}
+
+
+/* ----------------------------------------------------------------------------Browse by language hover style---------------------------------------------------------------------- */
+.browseByLanguageHover {
+    transition: 0.3s;
+    position: relative;
+    color: white;
+}
+
+.browseByLanguageHover:hover {
+    z-index: 3;
+    transform: scale(1.2);
+    transition-delay: 0.5s;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.scrollButtons {
+    background-color: transparent;
+    border: none;
+    color: white;
+    position: absolute;
+    width: 3%;
+    height: 70%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.scrollButtons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newReleaseSub:hover .scrollButtons {
+    display: flex;
+}
+
+.newReleaseContainer2:hover .scrollButtons {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.newReleaseSub:hover .hidden {
+    display: none;
+}
+
+.scrollButtonsLeft {
+    top: 22%;
+    left: 0;
+    border-radius: 10px;
+}
+
+.scrollButtonsRight {
+    top: 22%;
+    right: 0;
+    border-radius: 10px;
+}
+
+.animationScrollButtons {
+    width: 5%;
+    height: 90%;
+}
+
+.animationScrollButtonsTop {
+    top: 11%;
+}
+
+.browseBylanguagScrollButtons {
+    width: 4%;
+    height: 80%;
+}
+
+.browseBylanguagScrollButtonsTop {
+    top: 11%;
+}
+
+
+.newReleasedescriptionContainer {
+    padding: 10px 0px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 260px;
+    position: absolute;
+    top: 1px;
+    left: 100%;
+    height: 99.5%;
+    background-color: rgb(25, 23, 26, 0.9);
+    font-size: 13px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.newReleaseOptions {
+    border-radius: 10px;
+    width: 100%;
+    background-color: var(--dark);
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+
+}
+
+.playButton,
+.myListButton {
+    background-color: transparent;
+    height: fit-content;
+    color: white;
+    border: none;
+    font-size: 12px;
+}
+
+.newReleaseDetailsListContainer {
+    visibility: hidden;
+    opacity: 0;
+    border-top: 1px solid white;
+    padding-right: 10px;
+}
+
+.newReleaseDetailsList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.newReleaseDetailsListCertificate {
+    background-color: var(--grey);
+    color: var(--litegrey);
+    padding: 2px 5px;
+    font-weight: 620;
+    margin-left: 5px;
+}
+
+.newReleasedescription {
+    margin-top: 0px;
+    padding: 0px 10px;
+}
+
+.newRelease div:nth-child(6) .newReleasedescriptionContainer,
+.newRelease div:nth-child(12) .newReleasedescriptionContainer {
+    top: 0;
+    left: -89.5%;
+}
+
+.newRelease div:nth-child(6):hover .newReleasePoster,
+.newRelease div:nth-child(12):hover .newReleasePoster {
+    border-radius: 0;
+}
+
+.horizontalRow {
+    width: 100%;
+    height: 2px;
+    background-color: var(--red);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.dialogueBox {
+    text-align: center;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.dialogue {
+    border-bottom: 1px solid var(--grey);
+    color: var(--litegrey);
+    font-size: 25px;
+    width: 70%;
+    height: 95%;
+}
+
+.animationMovieContainer {
+    padding: 5px 35px;
+    transition: 1s;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+
+
+.image-container {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 20px;
+}
+.image-container::before{
+    content:"Loading..." ;
+    font-weight: 500;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    color: var(--litegrey);
+}
+
+
+.image-container img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animationMovieDescriptionContainer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(25, 23, 26, 0.9);
+    transform: translateY(100%);
+    transition-duration: 0.5s;
+
+}
+
+.image-container:hover .animationMovieDescriptionContainer {
+    transition-delay: 1s;
+    transform: translateY(0%);
+}
+
+.animationMovieDescription1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.animationMovieDescription2 {
+    color: white;
+    padding: 0 15px;
+    margin-top: 0px;
+}
+
+.animationMovieDescription2 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.animationMovieDescription3 {
+    color: white;
+    padding: 10px 15px;
+}
+
+
+
+
+
+/* -----------------------------------------------------------------------------footer styling ---------------------------------------------------------------------------------------------------------- */
+
+.footerContainer {
+    color: var(--litegrey);
+}
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerOptions {
+    width: 25%;
+}
+
+.footerHeading {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footerButtons {
+    width: fit-content;
+    margin-bottom: 5px;
+}
+
+.footerButtonPrivacy {
+    margin-top: 3px;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerConnectContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.footerAppStoreContainer {
+    margin-top: 30px;
+}
+
+.footerAppStoreContainer img:first-child {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.applicationStoreImage {
+    width: 145px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.footerButtons:hover,
+.footerButtonPrivacy a:hover,
+.footerConnectContainer svg:hover,
+.footerAppStoreContainer img:hover {
+    cursor: pointer;
+}
+
+
+
+/* -----------------------------------------------------------------------------------Movie Page------------------------------------------------------------------------------------------- */
+
+
+.movieBackgroundContainer {
+    height: 100vh;
+    position: relative;
+}
+
+.movieBackground {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.moviePageDetails {
+    position: absolute;
+    left: 0;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 0;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--dark) 20%, rgb(25, 23, 26, 0.9), rgb(25, 23, 26, 0.5), transparent);
+    color: white;
+    padding: 20px;
+}
+
+.moviePageDetails img {
+    width: 75%;
+}
+
+.moviePageDetailsShortDescription {
+    visibility: visible;
+    opacity: 1;
+    font-size: 50px;
+    background-color: transparent;
+    margin-top: 30px;
+}
+
+.moviePageDetailsShortDescription ul li {
+    font-size: 18px;
+    font-weight: 500;
+    width: fit-content;
+    list-style: none;
+}
+
+.moviePageDetailsDescription {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.moviePageButtonsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.moviePageButtonsPlay {
+    padding: 20px;
+    width: 60%;
+    width: 60%;
+    background-color: var(--dark);
+    border-radius: 50px;
+}
+
+.moviePageButtonsAddList {
+    width: 25%;
+
+}
+
+.moviePageCastContainer {
+    width: 100%;
+    color: white;
+    padding: 0px 10px;
+    margin-top: 20px;
+}
+
+.moviePageCastContainer p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.moviePageCastSubContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: scroll;
+}
+
+.moviePageCast {
+    width: 200px;
+    padding: 0 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.moviePageSvg {
+    width: 50px;
+}
+
+
+
+
+
+
+/* -----------------------------------------------------------------------------List of movies----------------------------------------------------------------------------------- */
+
+.moviesListContainer {
+    border: 1px solid transparent;
+    background-color: var(--grey);
+}
+
+.dropdown {
+    margin-top: 120px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.dropdown button {
+    border: 1px solid var(--litegrey);
+    color: var(--litegrey);
+    font-weight: 500;
+}
+
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: var(--dark);
+    background-color: var(--litegrey);
+    border: 1px solid var(--litegrey);
+
+}
+
+.dropdown button:hover {
+    color: var(--dark);
+    background-color: var(--litegrey);
+}
+
+.dropdown-menu {
+    background-color: rgb(25, 23, 26);
+    text-decoration: none;
+}
+
+.dropdown-menu li {
+    text-decoration: none;
+    color: var(--litegrey);
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--litegrey);
+    cursor: pointer;
+}
+
+.dropdown-item{
+    text-decoration: none;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.moviesListsubContainer {
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.moviesListHeadingContainer {
+    position: absolute;
+    top: -35px;
+    right: 5%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.moviesListHeading {
+    color: white;
+    font-size: 45px;
+    position: absolute;
+    right: 45vw;
+    top: -35px;
+    font-family: 'Anton';
+}
+
+.moviesListSubHeadingContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.moviesListSubHeading {
+    color: var(--litegrey);
+    font-size: 20px;
+}
+
+.moviesList {
+    margin-top: 20px;
+    padding: 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.moviesList div:nth-child(6n) .newReleasedescriptionContainer {
+    border-radius: 0;
+    left: -89%;
+    top: 0;
+}
+
+/* ------------------------------------------------------------------------------TV Show------------------------------------------------------------------------------------------------ */
+.tvShowLisContainer {
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    background-color: var(--dark);
+}
+
+.tvShowBannerButtonscontainer {
+    width: 100%;
+}
+
+.tvShowPlay {
+    width: 60px;
+    height: 60px;
+}
+
+.tvShowInfo {
+    width: 40px;
+    height: 40px;
+}
+
+.tvShowImageContainer {
+    border-radius: 10px;
+    width: 65%;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tvShowImageContainer::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-image: linear-gradient(to right, var(--dark) 10%, transparent 90%);
+    z-index: 5;
+}
+
+.tvShowImageDesc {
+    height: fit-content;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8%;
+}
+
+.tvShowImage {
+    width: 100%;
+    height: fit-content;
+}
+
+.tvShowImage4 {
+    width: 100%;
+}
+
+.tvShowImageTitleContainer {
+    width: 70%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tvShowImageTitle {
+    width: 250px;
+}
+
+.tvShowImageTitleContainer4 {
+    width: 100%;
+}
+
+.filterButton {
+    width: fit-content;
+    padding: 10px 20px;
+    border: 2px solid var(--litegrey);
+    color: var(--litegrey);
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filterButton:hover {
+    background-color: var(--grey);
+    color: white;
+}
+
+
+/* ------------------------------------------------------------------------------Page not found---------------------------------------------------------------------------------------------- */
+
+.pageNotFoundContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: center / cover no-repeat url('https://wallpapercave.com/wp/wp3077016.jpg');
+    position: relative;
+}
+
+.somethingWentWrong {
+    background: center / cover no-repeat url('http://images2.fanpop.com/image/photos/9700000/Ross-Geller-TOW-Ross-Tan-10-03-ross-geller-9744028-720-480.jpg');
+}
+
+.pageNotFoundContainer::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(25, 23, 26, 0.5);
+
+}
+
+.pageNotFoundHeading {
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+    z-index: 1;
+}
+
+/* .a {
+    border: 1px solid red;
+    overflow-x: auto;
+    width: 200px;
+}
+
+.b {
+    border: 1px solid blue;
+    display: flex;
+}
+
+.c {
+    width: 100px;
+    border: 1px solid green;
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+} */
+
+.carousel_splide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splideContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: "visible"
+}
+
+.splideTrack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: "visible"
+}
+
+.splideSlide {
+    overflow: "visible"
+}
+
+.splideHover {
+    z-index: 0;
+}
+
+.splideHover:hover {
+    scale: 1.1;
+    z-index: 5;
+}
+
+
+.embla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15em;
+    position: relative;
+    overflow: hidden;
+}
+
+.embla_animation {
+    height: 25em;
+}
+
+.embla__viewport {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.embla__container {
+    display: flex;
+    padding: 0 20px;
+}
+
+.embla__slide {
+    flex: 0 0 16.4%;
+    position: relative;
+    margin-right: 10px;
+    transition: translate 0.5s, scale 0.5s;
+    overflow: hidden;
+}
+
+.embla__slide::before{
+    content:"Loading..." ;
+    font-weight: 500;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    color: var(--litegrey);
+}
+
+.embla__prev {
+    color: white;
+    border: none;
+    height: 80%;
+    width: 2.5%;
+    background-color: var(--dark);
+    position: absolute;
+    left: 0;
+}
+
+.embla__next {
+    background-color: var(--dark);
+    height: 80%;
+    width: 2%;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 0;
+}
+
+
+@media (max-width: 1299px) {
+    .embla__slide {
+        flex: 0 0 20%;
+    }
+
+    .embla {
+        height: 12em;
+    }
+}
+
+@media (max-width: 1099px) {
+    .embla__slide {
+        flex: 0 0 25%;
+    }
+}
+
+@media (max-width: 799px) {
+    .embla__slide {
+        flex: 0 0 30%;
+    }
+}
+
+@media (max-width: 499px) {
+    .embla__slide {
+        flex: 0 0 45%;
+    }
+}
+
+.posterImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+.posterLoader{
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    background-color: rgb(27, 26, 27);
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: -5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.anime_description_buttons {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.playSvg {
+    width: 20%;
+}
+
+.watchListSvg {
+    width: 15%;
+}
+
+
+.embla__slide:hover .DetailsListContainer {
+
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    font-weight: 600;
+}
+
+.DetailsListContainer {
+    margin-top: 10px;
+    visibility: hidden;
+    opacity: 0;
+    border-top: 2px solid var(--red);
+    padding-right: 10px;
+}
+
+.DetailsList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    flex: 1;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+.DetailsList li {
+    font-size: 10px;
+    width: 50%;
+}
+
+.emble_myListBtn {
+    font-size: 16px;
+}
+
+.slide-in{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--grey);
+    transform-origin: bottom;
+    z-index: 7;
+}
+.slide-out{
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--grey);
+    transform-origin: top;
+}
+
+/* ======================================================================================Search============================================================= */
+
+
+.search_container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox{
+    min-height: 75vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.searchInput{
+    background-color: transparent;
+    border: 2px solid var(--litegrey);
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 20px;
+    color: var(--litegrey);
+    font-weight: 600;
+}
+.searchBoxMessage{
+    color: var(--grey);
+    margin-top: 100px;
+    font-weight: 600;
+}

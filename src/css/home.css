@@ -60,10 +60,8 @@
     width: 100%;
 }
 
-
-
 .carouselImage1 {
-    background: center / cover no-repeat url("C:\Users\adity\Downloads\2272647.jpg");
+    background: center / cover no-repeat url("../../public/images/carouselBanner/2272647.jpg");
     border-radius: 10px;
     width: 65%;
     height: 100%;
@@ -99,21 +97,15 @@
     margin-left: 3%;
 }
 
-
 /* banner 2  */
 .carouselImage2 {
-    background: center / cover no-repeat url("C:\Users\adity\Downloads\kgf.jpg");
-
+    background: center / cover no-repeat url("../../public/images/carouselBanner/kgf.jpg");
 }
-
 
 /* banner 3  */
 .carouselImage3 {
-    background: center / cover no-repeat url("C:\Users\adity\Downloads\rrr.jpg");
+    background: center / cover no-repeat url("../../public/images/carouselBanner/rrr.jpg");
 }
-
-
-
 
 
 /* New release  */
@@ -215,7 +207,6 @@
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-
 .scrollButtons {
     background-color: transparent;
     border: none;
@@ -315,7 +306,7 @@
     height: fit-content;
     color: white;
     border: none;
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .newReleaseDetailsListContainer {
@@ -391,8 +382,6 @@
     scroll-behavior: smooth;
 }
 
-
-
 .image-container {
     width: 300px;
     height: 400px;
@@ -401,7 +390,7 @@
     margin-right: 20px;
 }
 .image-container::before{
-    content:"Loading..." ;
+    content:"" ;
     font-weight: 500;
     position: absolute;
     width: 100%;
@@ -410,9 +399,8 @@
     justify-content: center;
     align-items: center;
     z-index: -1;
-    color: var(--litegrey);
+    background-color: var(--litegrey);
 }
-
 
 .image-container img {
     width: 100%;
@@ -463,9 +451,6 @@
 }
 
 
-
-
-
 /* -----------------------------------------------------------------------------footer styling ---------------------------------------------------------------------------------------------------------- */
 
 .footerContainer {
@@ -498,6 +483,12 @@
     width: 65%;
     display: flex;
     justify-content: space-between;
+    list-style: none;
+    color: var(--litegrey);
+}
+.footerButtonPrivacy a {
+    text-decoration: none;
+    color: var(--litegrey);
 }
 
 .footerConnectContainer {
@@ -528,10 +519,7 @@
     cursor: pointer;
 }
 
-
-
 /* -----------------------------------------------------------------------------------Movie Page------------------------------------------------------------------------------------------- */
-
 
 .movieBackgroundContainer {
     height: 100vh;
@@ -634,11 +622,6 @@
 .moviePageSvg {
     width: 50px;
 }
-
-
-
-
-
 
 /* -----------------------------------------------------------------------------List of movies----------------------------------------------------------------------------------- */
 
@@ -873,25 +856,6 @@
     z-index: 1;
 }
 
-/* .a {
-    border: 1px solid red;
-    overflow-x: auto;
-    width: 200px;
-}
-
-.b {
-    border: 1px solid blue;
-    display: flex;
-}
-
-.c {
-    width: 100px;
-    border: 1px solid green;
-    color: white;
-    text-align: center;
-    margin-right: 20px;
-} */
-
 .carousel_splide {
     display: flex;
     justify-content: center;
@@ -962,7 +926,7 @@
 }
 
 .embla__slide::before{
-    content:"Loading..." ;
+    content:"" ;
     font-weight: 500;
     position: absolute;
     width: 100%;
@@ -971,7 +935,8 @@
     justify-content: center;
     align-items: center;
     z-index: -1;
-    color: var(--litegrey);
+    background-color: var(--grey);
+    border-radius: 1em;
 }
 
 .embla__prev {
@@ -1027,6 +992,7 @@
     width: 100%;
     height: 100%;
     border-radius: 1em;
+    cursor: pointer;
 }
 .posterLoader{
     width: 100%;
@@ -1161,3 +1127,9 @@
     margin-top: 100px;
     font-weight: 600;
 }
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: var(--accent);
+  }

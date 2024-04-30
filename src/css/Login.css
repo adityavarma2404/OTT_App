@@ -161,7 +161,8 @@
 
 .loginInput {
     padding: 0 10px;
-    color: white;
+    color: black;
+    font-weight: 500;
 }
 
 .RegisterContainer label {

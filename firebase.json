@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "looki-n",
     "public": "build",
     "ignore": [
       "firebase.json",

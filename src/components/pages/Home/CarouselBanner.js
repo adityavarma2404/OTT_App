@@ -1,5 +1,5 @@
 import React from "react";
-import baahubail from "../../../asserts/baahubali.png";
+import baahubail from "../../../asserts/baahubali.webp";
 import KGF from "../../../asserts/KGF.png";
 import RRR from "../../../asserts/RRR.png";
 import { motion } from "framer-motion";

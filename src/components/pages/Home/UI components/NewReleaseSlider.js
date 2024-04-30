@@ -70,11 +70,13 @@ function NewReleaseSlider(props) {
   const posterDesc = {
     before: {
       opacity: 0,
+      display: "none",
       y: 100,
       transition: { delay: 0 },
     },
     after: {
       opacity: 1,
+      display: "flex",
       y: 0,
       transition: { delay: 1, stiffness: 0 },
     },

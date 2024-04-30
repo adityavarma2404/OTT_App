@@ -120,6 +120,11 @@
     color: var(--litegrey);
 }
 
+.newReleaseHeading a{
+    text-decoration: none;
+    color: var(--litegrey);
+}
+
 .seeMoreText {
     text-decoration: none;
     color: var(--litegrey);

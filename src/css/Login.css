@@ -40,7 +40,7 @@
 }
 
 .bodyBackground {
-    background-image: url('../../public/images/loki1.jpg');
+    background-image: url('../../public/images/loki1.webp');
     background-color: black;
     background-repeat: no-repeat;
     height: 100vh;
@@ -537,7 +537,7 @@
 
 @media screen and (min-width: 850px) and (max-width: 1180px) {
     .bodyBackground {
-        background-image: url('../../public/images/thor1.jpg');
+        background-image: url('../../public/images/thor1.webp');
         background-position: -350px;
         background-size: cover;
     }
@@ -563,7 +563,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 850px) {
     .bodyBackground {
-        background-image: url('../../public/images/bpanther.jpg');
+        background-image: url('../../public/images/bpanther.webp');
         background-position: -250px;
         background-size: cover;
     }

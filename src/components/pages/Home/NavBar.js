@@ -61,22 +61,22 @@ function NavBar() {
         className="NavBar_menu_container"
       >
         <motion.ul variants={listVariants} className="NavBar_menu_ul">
-          <motion.li variants={sublistVariants} whileHover={{scale: 1.2,fontFamily: "BerkshireSwash"}}>
+          <motion.li variants={sublistVariants} whileHover={{scale: 1.2,x:-25}}>
             <Link className="NavBar_link" to="" onClick={handleClick}>
               Home
             </Link>
           </motion.li>
-          <motion.li variants={sublistVariants} whileHover={{scale: 1.2,fontFamily: "BerkshireSwash"}} >
+          <motion.li variants={sublistVariants} whileHover={{scale: 1.2,x:-25}} >
             <Link className="NavBar_link" to="movies" onClick={handleClick}>
               Movies
             </Link>
           </motion.li>
-          <motion.li variants={sublistVariants} whileHover={{scale: 1.2,fontFamily: "BerkshireSwash"}} >
+          <motion.li variants={sublistVariants} whileHover={{scale: 1.2,x:-25}} >
             <Link className="NavBar_link" to="tvshows" onClick={handleClick}>
               TV Shows
             </Link>
           </motion.li>
-          <motion.li variants={sublistVariants} whileHover={{scale: 1.2,fontFamily: "BerkshireSwash"}} >
+          <motion.li variants={sublistVariants} whileHover={{scale: 1.2,x:-25}} >
             <Link className="NavBar_link" to="myList" onClick={handleClick}>
               My List
             </Link>

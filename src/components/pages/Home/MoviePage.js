@@ -83,8 +83,6 @@ function MoviePage() {
               <button className="playButton moviePageButtonsPlay">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="55"
-                  height="55"
                   fill="currentColor"
                   className="bi bi-play-fill"
                   viewBox="0 0 16 16"
@@ -94,11 +92,9 @@ function MoviePage() {
                 Play
               </button>
               {fetcedData.favourite ? (
-                <button className="myListButton">
+                <button className="myListButton moviePageButtonsAddList">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
                     fill="currentColor"
                     className="bi bi-check2 me-2"
                     viewBox="0 0 16 16"
@@ -108,11 +104,9 @@ function MoviePage() {
                   Listed
                 </button>
               ) : (
-                <button className="myListButton">
+                <button className="myListButton moviePageButtonsAddList">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="30"
-                    height="30"
                     fill="currentColor"
                     className="bi bi-plus-lg me-2"
                     viewBox="0 0 16 16"

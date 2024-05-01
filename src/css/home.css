@@ -585,14 +585,14 @@
 .moviePageButtonsPlay {
     padding: 20px;
     width: 60%;
-    width: 60%;
     background-color: var(--dark);
     border-radius: 50px;
 }
-
-.moviePageButtonsAddList {
-    width: 25%;
-
+.moviePageButtonsPlay svg{
+    width: 50px;
+}
+.moviePageButtonsAddList svg{
+    width: 40px;
 }
 
 .moviePageCastContainer {
@@ -797,8 +797,7 @@
 }
 
 .tvShowImageTitleContainer {
-    width: 70%;
-    height: 150px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;

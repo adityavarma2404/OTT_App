@@ -203,7 +203,7 @@ function TVshow() {
           </div>
           <div className="carousel-item" data-bs-interval="5000">
             <div className="carouselImageContainer">
-              <div className="tvShowImageDesc">
+              <div className="carouselImageDescription tvShowImageDesc">
                 <div className="carouselImageRank">
                   <h3>#4 in India</h3>
                 </div>
@@ -246,7 +246,7 @@ function TVshow() {
               </div>
               <div className="tvShowImageContainer ">
                 <img
-                  className="tvShowImage tvShowImage4"
+                  className="tvShowImage"
                   src="https://wallpaperaccess.com/full/9330071.jpg"
                   alt=""
                 />

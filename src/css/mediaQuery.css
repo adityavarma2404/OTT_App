@@ -2,16 +2,18 @@
     .carouselImageTitle {
         width: 70%;
     }
+
     .moviePageDetails {
         width: 40%;
         height: 100%;
     }
+
     .tvShowImageTitle {
         width: 200px;
     }
 
     .tvShowImageDesc {
-        padding-left: 0% ;
+        padding-left: 0%;
     }
 
     .newReleasePoster {
@@ -37,7 +39,7 @@
     .carouselImageTitle {
         width: 90%;
     }
-    
+
     .filterButton {
         font-size: 18px;
         margin-bottom: 10px;
@@ -77,8 +79,8 @@
     }
 
     .carouselImageDescription {
-        width: 30% ;
-        padding-left: 0 ;
+        width: 30%;
+        padding-left: 0;
     }
 
     .carouselImageInfo {
@@ -96,23 +98,38 @@
 }
 
 @media screen and (max-width:799px) {
+    .profileNotificationBox {
+        height: 300px;
+        width: 220px;
+    }
+    .profileLogo {
+        width: 70px;
+        height: 50px;
+    }
+    .movieBackground {
+        object-fit: contain;
+    }
 
-    .searchInput{
+    .searchInput {
         width: 70%;
     }
 
-    .moviePageDetailsDescription{
+    .moviePageDetailsDescription {
         display: none;
     }
+
     .customCarousel {
         height: 50vh;
     }
+
     .filterButton {
         font-size: 16px;
     }
+
     .sideBarContainer {
         right: 50px;
     }
+
     .dropdown {
         display: flex;
         justify-content: flex-end;
@@ -132,8 +149,8 @@
         align-items: flex-start;
     }
 
-    .tvShowImageDesc h6{
-        display: none ;
+    .tvShowImageDesc h6 {
+        display: none;
     }
 
     .tvShowImageContainer {
@@ -142,6 +159,7 @@
 
     .moviePageDetails {
         width: 55%;
+        justify-content: flex-end;
     }
 
     .moviesListSubHeading {
@@ -208,28 +226,40 @@
 
 
 @media screen and (max-width:499px) {
-
-    .carouselImageDescription {
-        width: 55%;
+    .moviePageButtonsPlay, .moviePageButtonsAddList{
+        font-size: 18px;
+    }
+    .moviePageButtonsPlay{
+        width: 50%;
+    }
+    .moviePageButtonsContainer{
+        width: 100%;
+    }
+    .moviePageDetails {
+        width: 80%;
+        background-image: linear-gradient(to right, var(--dark) 10%, rgb(25, 23, 26, 0.5), rgb(25, 23, 26, 0.5), transparent);
     }
 
     .tvShowImageTitle {
         width: 180px;
     }
+
     .moviesListPoster {
         width: 240px;
         height: 135px;
     }
 
     .tvShowImageDesc {
-        bottom: 10%;
+        bottom: 0%;
         right: 30%;
         z-index: 5;
         width: 70%;
     }
-    .tvShowImageDesc .tvShowBannerButtonscontainer{
-        display: none ;
+
+    .tvShowImageDesc .tvShowBannerButtonscontainer {
+        display: none;
     }
+
     .tvShowImageDesc {
         left: 20px;
     }
